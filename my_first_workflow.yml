@@ -1,0 +1,14 @@
+name: My First Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step with error
+        run: echoo "Hello world"   # Commande volontairement erronée
+
